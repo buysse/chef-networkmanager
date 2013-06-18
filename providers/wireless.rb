@@ -16,7 +16,7 @@ action :create do
     mode "0600"
     owner "root"
     group "root"
-    variables({:res => new_resource, :mac_address => mac_address)
+    variables({:res => new_resource, :mac_address => mac_address})
   end
   new_resource.updated_by_last_action(t.updated_by_last_action?)
 end
