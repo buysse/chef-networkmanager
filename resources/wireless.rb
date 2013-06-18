@@ -14,7 +14,7 @@ attribute :auth_alg, :kind_of => String,
           :equal_to => [ "open" ], 
           :default => "open"
 attribute :psk, :kind_of => String
-attribute :local_interface, :kind_of => String, 
+attribute :interface, :kind_of => String, 
           :default => "wlan0"
 
 # Optional attributes
