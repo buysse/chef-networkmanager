@@ -15,3 +15,6 @@ attribute :group_name, :kind_of => String,
 attribute :group_password, :kind_of => String,
           :default => ""
 attribute :gateway, :kind_of => String
+
+attribute :uuid, :kind_of => String
+attribute :comment, :kind_of => String
