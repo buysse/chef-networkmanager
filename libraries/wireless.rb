@@ -1,5 +1,5 @@
 def get_uuid_or_generate_for(connection_name) 
-  if File.exists("/etc/NetworkManager/system-connections/#{connection_name}") then
+  if File.exists?("/etc/NetworkManager/system-connections/#{connection_name}") then
     uuid = `grep ^uuid= /etc/NetworkManager/system-connections/#{connection_name} | cut -f2 -d=`
   else
     uuid = `/usr/bin/uuidgen -r`
