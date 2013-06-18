@@ -13,7 +13,7 @@ mac-address=<%= @mac_address %>
 security=802-11-wireless-security
 
 [802-11-wireless-security]
-key-mgmt=<% @res.keytype %>
+key-mgmt=<%= @res.keytype %>
 auth-alg=<%= @res.auth_alg %>
 psk=<%= @res.psk %>
 
