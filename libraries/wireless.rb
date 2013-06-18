@@ -15,7 +15,7 @@ def get_mac_addr_for_interface(interface)
         mac_address = k
       end
     end
-  catch
+  rescue 
     Chef::Log.warn("Exception caught looking for interface mac address")
   end
   return mac_address
