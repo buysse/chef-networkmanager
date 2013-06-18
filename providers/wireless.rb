@@ -13,6 +13,7 @@ action :create do
   end
   t = template "/etc/NetworkManager/system-connections/#{new_resource.name}" do 
     source "wireless_connection.erb"
+    cookbook "networkmanager"
     mode "0600"
     owner "root"
     group "root"
