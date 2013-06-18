@@ -4,7 +4,7 @@ end
 
 action :create do
   if new_resource.uuid.nil? then
-    new_resource.uuid = get_uuid_or_generate_for(new_resource.name)
+    new_resource.uuid(get_uuid_or_generate_for(new_resource.name))
   end
   mac_address = get_mac_addr_for_interface(new_resource.interface)
   if mac_address.nil? then
